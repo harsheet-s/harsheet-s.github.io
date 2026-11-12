@@ -89,8 +89,8 @@ and rebuilt here with the engineering discipline the original lacked.
 
 **[github.com/harsheet-s/around-the-table](https://github.com/harsheet-s/around-the-table)**
 
-The rebuild was done across three reviewed pull requests rather than direct commits to
-main:
+The rebuild was done across three merged pull requests rather than direct commits to main.
+I was the only contributor, so none of them carries a second reviewer's approval:
 
 1. **Project scaffolding and CI** — README, dependency pinning split between runtime and
    development requirements, `.gitignore`, and a GitHub Actions workflow
@@ -101,6 +101,11 @@ main:
 3. **Model test suite** — 37 unit tests covering card damage and copying, deck construction
    and exhaustion, player hand limits and health, dealer round sequencing, and the player
    cap
+4. **Fixing the ignore file** — raised after the cybersecurity module sent me back to
+   re-read my own repository. The scaffolding commit had named the file `gitignore` without
+   its leading dot, so git never applied it and the compiled `__pycache__` directories had
+   been tracked from the start. Renaming it and untracking those directories was a fourth
+   pull request.
 
 The tests run headless in continuous integration on every push and pull request. That is
 possible because the model layer imports nothing from Tkinter — an architectural decision
@@ -143,7 +148,12 @@ treating that process as evidence of quality. None of it demonstrates the applic
 secure. Pinning dependencies makes builds reproducible and says nothing about whether the
 pinned versions carry known vulnerabilities.
 
-Three things I would change, each a pull request:
+The first fault I found was more basic than that. The `.gitignore` I had listed among the
+scaffolding was there, but it had been committed without its leading dot, so git ignored
+the ignore file and tracked the compiled directories it was meant to exclude. Writing it
+down had been enough to make me treat it as done. Fixed in the fourth pull request above.
+
+Three changes remain outstanding, each a pull request:
 
 1. Add dependency vulnerability scanning to the CI workflow
 2. Review what permissions that workflow actually holds
