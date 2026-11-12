@@ -82,6 +82,11 @@ the field rather than a gap in my own understanding.
 Both were sat *after* the rebuild below rather than before it. I built the capability by
 doing the work; the assessments confirmed it afterwards.
 
+![Canvas record of the four module quiz results](artefacts/module-results.png)
+
+*Canvas record of all four module quiz results. Also at
+[artefacts/module-results.png](artefacts/module-results.png).*
+
 ### Applied artefact: Around the Table
 
 A multiplayer card game in Python and Tkinter, originally written for 48024 Programming 2
@@ -135,6 +140,9 @@ attempted**
 - **Cybersecurity Assessment 1 (Quiz)** — 19.5/20
 - **Cybersecurity Assessment 2 (Quiz)** — 19/20
 - **Cybersecurity Assessment 3 — Incident and Defence Strategies (60 pts)** — not attempted
+
+The Canvas record for both quizzes is in the
+[screenshot under Goal 3](#module-assessments), which covers all four module assessments.
 
 The module covers the CIA triad, security management, risk assessment, preventive,
 detection and recovery controls, cyber threat intelligence, operational security and secure
