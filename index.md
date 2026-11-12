@@ -31,6 +31,19 @@ skills below Level 2 and I could not yet evidence that level.
 
 ## Goal 1 — Ethical practice and Indigenous engagement
 
+**Status: completed**
+
+### Module completion
+
+- **Working Ethically in the IT Industry** — completed November 2026. Covers the IT code of
+  ethics, privacy and data protection, intellectual property and copyright, cybersecurity
+  and ethical hacking, emerging challenges and social implications, power and
+  whistleblowing, and an ethical thinking framework.
+- **Indigenous Professional Capability** — completed November 2026. Covers reconciliation in
+  Australia, Reconciliation Action Plans, Indigenous Data Sovereignty, Free Prior and
+  Informed Consent, collecting and researching Indigenous data, and a case study on an
+  ethical dilemma.
+
 ### Applied artefact: ethical analysis for a design firm
 
 A professional email to the management of DesignR, a graphic design firm proposing to sell
@@ -45,14 +58,21 @@ DesignR's position rather than overstating the comparison.
 
 **[Ethical analysis: AI-generated Indigenous imagery (PDF)](artefacts/ethical-analysis-designr.pdf)**
 
-### Module completion
+### Reflective artefact: what I would change, having completed the modules
 
-- Working Ethically in the IT Industry
-- Indigenous Professional Capability
+I wrote the DesignR analysis *before* completing the Indigenous Professional Capability
+module. This piece records what the module changed: that my email was better at explaining
+what the firm was doing wrong than at setting out how the work could proceed responsibly,
+and that the Free Prior and Informed Consent problem I raised is an unresolved question in
+the field rather than a gap in my own understanding.
+
+**[What I would change in my ethical analysis (PDF)](artefacts/reflection-post-module.pdf)**
 
 ---
 
 ## Goal 3 — Software development practice
+
+**Status: applied component completed; module content not completed**
 
 ### Applied artefact: Around the Table
 
@@ -76,12 +96,18 @@ main:
 
 The tests run headless in continuous integration on every push and pull request. That is
 possible because the model layer imports nothing from Tkinter — an architectural decision
-from the original build that turned out to be what made the code testable at all.
+from the original build that turned out to be what made the code testable at all. Because
+the model has no interface dependency, the workflow installs only the development
+requirements rather than Pillow, which it has no use for.
 
 Two behaviours the tests document that are not obvious from reading the code: `Card.copy()`
 returns a card at full health regardless of the original's state, which is what stops a
 damaged card library poisoning new decks; and the secondary deck card rotates between
 players each round through `(round_counter - 1) % len(players)`.
+
+**On the module content.** I did not complete the Software Development module itself. The
+capabilities it covers — branching, pull requests, YAML, GitHub Actions — were developed
+through this rebuild instead, and the repository is the evidence of that.
 
 ---
 
@@ -89,12 +115,14 @@ players each round through `(round_counter - 1) % len(players)`.
 
 **Goal 2 — Foundational cybersecurity.** Scoped but not undertaken. The Introduction to
 Cybersecurity module carries three graded assessments, including a 60-point incident and
-defence strategies task, and I judged partway through the session that completing two goals
-properly was worth more than three partially. This remains scoped and is the first item in
-my forward plan.
+defence strategies task, and I judged partway through the session that completing one goal
+properly and one goal's applied component was worth more than attempting three partially.
+This is the first item in my forward plan, scheduled for the summer break rather than
+inside a teaching session.
 
 **Goal 4 — Model deployment and MLOps.** Recorded in the original plan as additional
-self-directed work outside the credit-point requirement. Not undertaken.
+self-directed work outside the credit-point requirement. Not undertaken. It remains the
+largest gap in the audit and is a forward goal for mid-2027.
 
 ---
 
