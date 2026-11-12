@@ -120,17 +120,46 @@ the two module assessments above are the independent check on whether that worke
 
 ---
 
-## Goals not completed
+## Goal 2 — Foundational cybersecurity
 
-**Goal 2 — Foundational cybersecurity.** Scoped but not undertaken. The Introduction to
-Cybersecurity module carries three graded assessments, including a 60-point incident and
-defence strategies task, and I judged partway through the session that completing two goals
-properly was worth more than attempting three partially. This is the first item in my
-forward plan, scheduled for the summer break rather than inside a teaching session.
+**Status: module content completed and both quizzes passed; the third assessment not
+attempted**
 
-**Goal 4 — Model deployment and MLOps.** Recorded in the original plan as additional
-self-directed work outside the credit-point requirement. Not undertaken. It remains the
-largest gap in the audit and is a forward goal for mid-2027.
+### Module assessments
+
+- **Cybersecurity Assessment 1 (Quiz)** — 19.5/20
+- **Cybersecurity Assessment 2 (Quiz)** — 19/20
+- **Cybersecurity Assessment 3 — Incident and Defence Strategies (60 pts)** — not attempted
+
+The module covers the CIA triad, security management, risk assessment, preventive,
+detection and recovery controls, cyber threat intelligence, operational security and secure
+coding.
+
+### What it found in the Goal 3 repository
+
+The most useful outcome was not the quiz results. Having rebuilt the card game repository
+around process — pull requests, CI, pinned dependencies, automated tests — I had been
+treating that process as evidence of quality. None of it demonstrates the application is
+secure. Pinning dependencies makes builds reproducible and says nothing about whether the
+pinned versions carry known vulnerabilities.
+
+Three things I would change, each a pull request:
+
+1. Add dependency vulnerability scanning to the CI workflow
+2. Review what permissions that workflow actually holds
+3. Extend the test suite to cover security-relevant behaviour, not only whether features
+   work
+
+Engineering discipline and security are not the same property, and I had been assuming the
+first produced the second.
+
+---
+
+## Goal 4 — Model deployment and MLOps
+
+**Status: not undertaken.** Recorded in the original plan as additional self-directed work
+outside the credit-point requirement. It remains the largest gap in the audit and is a
+forward goal for mid-2027.
 
 ---
 
