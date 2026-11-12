@@ -72,7 +72,15 @@ the field rather than a gap in my own understanding.
 
 ## Goal 3 — Software development practice
 
-**Status: applied component completed; module content not completed**
+**Status: completed — both module assessments passed and the applied artefact built**
+
+### Module assessments
+
+- **GitHub Essentials (Quiz 1)** — 9/10
+- **GitHub Workflow (Quiz 2)** — 10/10
+
+Both were sat *after* the rebuild below rather than before it. I built the capability by
+doing the work; the assessments confirmed it afterwards.
 
 ### Applied artefact: Around the Table
 
@@ -105,9 +113,10 @@ returns a card at full health regardless of the original's state, which is what 
 damaged card library poisoning new decks; and the secondary deck card rotates between
 players each round through `(round_counter - 1) % len(players)`.
 
-**On the module content.** I did not complete the Software Development module itself. The
-capabilities it covers — branching, pull requests, YAML, GitHub Actions — were developed
-through this rebuild instead, and the repository is the evidence of that.
+**On the module content.** I have not worked through every page of the Software Development
+module, and I record that rather than imply otherwise. The capabilities it covers —
+branching, pull requests, YAML, GitHub Actions — were developed through this rebuild, and
+the two module assessments above are the independent check on whether that worked.
 
 ---
 
@@ -115,10 +124,9 @@ through this rebuild instead, and the repository is the evidence of that.
 
 **Goal 2 — Foundational cybersecurity.** Scoped but not undertaken. The Introduction to
 Cybersecurity module carries three graded assessments, including a 60-point incident and
-defence strategies task, and I judged partway through the session that completing one goal
-properly and one goal's applied component was worth more than attempting three partially.
-This is the first item in my forward plan, scheduled for the summer break rather than
-inside a teaching session.
+defence strategies task, and I judged partway through the session that completing two goals
+properly was worth more than attempting three partially. This is the first item in my
+forward plan, scheduled for the summer break rather than inside a teaching session.
 
 **Goal 4 — Model deployment and MLOps.** Recorded in the original plan as additional
 self-directed work outside the credit-point requirement. Not undertaken. It remains the
