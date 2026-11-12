@@ -94,8 +94,10 @@ and rebuilt here with the engineering discipline the original lacked.
 
 **[github.com/harsheet-s/around-the-table](https://github.com/harsheet-s/around-the-table)**
 
-The rebuild was done across three merged pull requests rather than direct commits to main.
-I was the only contributor, so none of them carries a second reviewer's approval:
+The work was done across four merged pull requests rather than direct commits to main:
+three for the rebuild itself, and a fourth raised later to fix a fault the cybersecurity
+module exposed. I was the only contributor, so none of them carries a second reviewer's
+approval.
 
 1. **Project scaffolding and CI** — README, dependency pinning split between runtime and
    development requirements, `.gitignore`, and a GitHub Actions workflow
